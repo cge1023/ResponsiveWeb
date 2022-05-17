@@ -1,94 +1,164 @@
 body {
     margin: 0;
+    font-family: Arial, Sans-Serif;
   }
   
-  #div1 {
-    background-color: #FF0000;
+  .navbar {
+    background-color: #353535;
     width: 100%;
     height: 60px;
+    padding-left: 30px;
+    /*navbar의 높이만큼 line-height를 설정하면 가운데로 정렬*/
+    line-height: 60px; 
   }
   
-  #div2 {
-    background-color: #FFA500;
+  .navbar .logo {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .banner {
+    background-image: url('../images/main_img.jpg');
     width: 100%;
     height: 350px;
+    background-size: cover;
+    background-position: center center;
   }
   
-  #div3 {
-    background-color: #FFFF00;
+  .info {
+    background-color: white;
     width: 100%;
     height: 320px;
   }
   
-  #div4 {
-    background-color: #008000;
+  .info .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .info .info-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .info .label {
+    font-size: 16px;
+    color: #4a4a4a;
+  }
+  
+  .info h2 {
+    font-size: 20px;
+    color: #1b1b1b;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .info p { 
+    font-size: 16px;
+    color: #7a7a7a;
+    margin: 0;
+  }
+  
+  .img-div1 {
+    background-image: url('../images/img1.jpg');
+    background-position: center top;
+    background-size: cover;
     width: 100%;
     height: 385px;
   }
   
-  #div5 {
-    background-color: #0000FF;
+  .img-div2 {
+    background-image: url('../images/img2.jpg');
+    background-position: center top;
+    background-size: cover;
     width: 100%;
     height: 200px;
+    text-align: center;
   }
   
-  #div6 {
-    background-color: #4B0082;
+  .img-div2 .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .img-div2 a {
+    color: white;
+    font-weight: bold;
+    border: 4px solid white;
+    padding: 9px 40px;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  .img-div3 {
+    background-image: url('../images/img3.jpg');
+    background-position: center top;
+    background-size: cover;
     width: 100%;
     height: 200px;
   }
   
   /* Tablet */
   @media (min-width: 768px) {
-      div {
-          float: left;
+  .col {
+    float: left;
       }
-  #div2 {
+  .banner {
     height: 562px;
   }
   
-  #div3 {
+  .info {
     height: 282px;
   }
   
-  #div4 {
+  .info .info-container {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  
+  .img-div1 {
     height: 360px;
     width: 50%;
   }
   
-  #div5 {
+  .img-div2 {
     height: 180px;
     width: 50%;
   }
   
-  #div6 {
+  .img-div3 {
     height: 180px;
     width: 50%;
   }
   
   /* Desktop */
   @media (min-width: 992px) {
-  #div2 {
+  .banner {
     height: 700px;
     width: 50%;
   }
   
-  #div3 {
+  .info {
     height: 350px;
     width: 50%;
   }
   
-  #div4 {
+  .info .info-container {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  
+  .img-div1 {
     height: 350px;
     width: 25%;
   }
   
-  #div5 {
+  .img-div2 {
     height: 175px;
     width: 25%;
   }
   
-  #div6 {
+  .img-div3 {
     height: 175px;
     width: 25%;
   }
